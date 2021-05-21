@@ -1,7 +1,7 @@
 ---
 name: User Story Template
-about: "[User Story]"
-title: ''
+about: Use this template to create new issue for user story development
+title: "[User Story]"
 labels: ''
 assignees: ''
 
