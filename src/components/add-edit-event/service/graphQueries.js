@@ -104,7 +104,7 @@ class Service {
       );
       this.val=createEventLocation.id
     }
-    debugger
+    
     const { updateEventProfile } = await graphcms.request(
       `mutation ($data: EventProfileUpdateInput!) {  updateEventProfile(data:$data , where: {id: "${idx}"}) {    id  }}`,
       {

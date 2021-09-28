@@ -62,7 +62,7 @@ const AddEditEvent = (props) => {
       });
     } else if (edit === true && value !== null) {
       values.location = !AddLocation;
-      debugger
+      
       values.city_id = values.city_id===undefined?data.eventLocation.id:values.city_id;
       Service.updateProfile(values, props.data.id).then((s) => {
         if (s.publishManyEventProfilesConnection.aggregate.count === 1) {
@@ -129,7 +129,7 @@ const AddEditEvent = (props) => {
       values.location = !AddLocation;
       values.city_id=data[0];
       values.loc=data[0];
-      debugger
+      
       handleChange(true);
       handleBlur(true);
     }
